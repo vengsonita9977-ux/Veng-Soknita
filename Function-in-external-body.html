@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Function Example</title>
+  
+  <!-- internal script -->
+  <script >
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+
+  <!-- external script link -->
+  <script src="./script.js"></script>
+
+</head>
+<body>
+
+  <h2>Demo JavaScript in Head</h2>
+
+  <!-- internal function -->
+  <p id="demo">A Paragraph</p>
+  <button type="button" onclick="myFunction()">Try it</button>
+
+  <!-- body function   -->
+  <p id="demo2">Original text</p>
+  <button onclick="document.getElementById('demo2').innerHTML = 'Changed by body script';">
+    Click Me
+  </button>
+
+  <!-- external function -->
+     <h2>JavaScript External</h2>
+  <p id="demo3">Original text</p>
+  <button onclick="changeText()">Click Me</button>
+</body>
+</html>
